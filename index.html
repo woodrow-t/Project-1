@@ -5,61 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css">
 
-    <link rel="javascript" href="app.js">
-
+    <script src="app.js" defer></script>
+    
 </head>
 <body>
-    <div class= "header-container">
-        <header>
+    <header>
+        <div class="title">
             <h1>Title/Heading</h1>
-            <p>"hook quote" -Anonymous</p>
-            <nav>
-                <div class= 'hamburger'>
-                    <div>
-                        <a href="#">icon</a>
-                    </div>
-                    <ul>
-                        <a>Digital Work</a>
-                        <a>Fine Art</a>
-                        <a>Merchandise</a>
-                        <a>Contact Me</a>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
-
+            <p class="hook-quote">"hook quote" -Anonymous</p>
+        </div>
+        <nav class="nav-tray">
+            <div class="hamburger">☰</div> 
+                <div class="link"><a href="#">Digital Work</a></div>
+                <div class="link"><a href="#">Fine Art</a></div>
+                <div class="link"><a href="#">Merchandise</a></div>
+                <div class="link"><a href="#">Contact Me</a></div>
+        </nav>
+    </header>
     <div class="about-me">
         <img src="" alt="profile-picture">
         <h1>About Me</h1>
         <p>About me description here</p>
     </div>
-    <div class="carousel">
-        <p>carousel 1</p>
-        <div class="works-container">
-            <img src="" alt="work-example">
-            <p>descritpion of work here</p>
-        </div>
+    
+    <div class="carousel-container carousel-1">
+            <h1>Digital Work</h1>
     </div>
-    <div class="carousel">
-        <p>carousel 2</p>
-        <div class="works-container">
-            <img src="" alt="work-example">
-            <p>descritpion of work here</p>
-        </div>
+    <div class="carousel-container carousel-2">
+            <h1>Fine Art</h1>
     </div>
-    <div class="carousel">
-        <p>carousel 3</p>
-        <div class="works-container">
-            <img src="" alt="work-example">
-            <p>descritpion of work here</p>
-        </div>
+    <div class="carousel-container carousel-3">
+            <h1>Merchandise</h1>
+    </div>
+    
+
+    <div class="contact-me">
+        <h1>Contact Me</h1>
+        <button class= "submission" type="submit">insert info here</button>
     </div>
 
+    
     <footer>
-        <p>info about the footer down here</p>
+         <p>info about the footer down here</p>
     </footer>
+    
 </body>
 </html>
