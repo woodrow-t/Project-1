@@ -1,6 +1,6 @@
 * {
-    text-align: center;
-    /* border-style: solid; */
+    /* text-align: center; */
+    border-style: solid;
     border-width: 1px;
 }
 
@@ -19,13 +19,20 @@ header {
     min-width: 270px;
 }
 
-footer {
+.footer {
     width: 100%;
     color: white;
+    padding-left: 10px;
+    text-align: left;
     background-color: black;
     position: absolute;
     bottom: 1;
     left: 0;
+}
+
+#header {
+    display: block;
+    top: 0;
 }
 
 p.hook-quote {
@@ -52,6 +59,7 @@ p.hook-quote {
 
 .about-me {
     border-radius: 10px;
+    text-align: center;
     background-color: burlywood;
     width: 80%;
     margin: 20px auto;
@@ -63,9 +71,9 @@ p.hook-quote {
 
 .carousel-container {
     border-radius: 10px;
-    max-width: 850px;
-    margin-top: 10px;
-    margin: 15px auto;
+    max-width: 80%;
+    text-align: center;
+    margin:15px auto;
     padding: 20px;
     background-color: burlywood;
     height: auto;
@@ -123,8 +131,17 @@ p.hook-quote {
         display: block;
     }
     .about-me {
-        align-self: center;
+        display: flex;
+        justify-content: space-evenly;
         max-width: 700px;
     }
+    .carousel-container {
+        max-width: 80%;
+    }
+}
 
+@media (min-width: 769px) {
+    .carousel-container {
+        max-width: 780px;
+    }
 }
