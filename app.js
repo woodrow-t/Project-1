@@ -19,19 +19,44 @@ const showMenu = (event) => {
 
 $hamburger.on('click', showMenu)
 
-$.ajax({ url: 'https://spreadsheets.google.com/feeds/list/1VxZmlh7dJvvnNSIJQEof1Lxx4aZHQHk8Iq3ngcc9VFg/1/public/full?alt=json'}).then(data => {
+// $.ajax({ url: 'https://spreadsheets.google.com/feeds/list/1VxZmlh7dJvvnNSIJQEof1Lxx4aZHQHk8Iq3ngcc9VFg/1/public/full?alt=json'}).then(data => {
+//     console.log(data.feed.entry)
+//     const entries= data.feed.entry
+//     const $div = $('.carousel-1')
+//     entries.forEach(entry => {
+//         const $tray= $('<div>')
+//         let $img= $('<img>')
+//         $tray.addClass('slider1')
+//         let $p= $('<p>')
+//         $p.text(entry.gsx$description.$t)
+//         $img.attr('src', entry.gsx$img.$t)
+//         $tray.append($img, $p)
+//         $div.append($tray)
+//     });
+// })
+
+$.ajax({ url: 'https://spreadsheets.google.com/feeds/list/1VxZmlh7dJvvnNSIJQEof1Lxx4aZHQHk8Iq3ngcc9VFg/1/public/full?alt=json' }).then(data => {
     console.log(data.feed.entry)
-    const entries= data.feed.entry
+    // $('slider1') = $tray.forEach()
+    // let images =1;
+    // $(slider1(){
+    //     = $.makeArray($('$tray'))
+    // });
+    const entries = data.feed.entry
     const $div = $('.carousel-1')
     entries.forEach(entry => {
-        let $img= $('<img>')
-        let $p= $('<p>')
+        const $tray = $('<div>')
+        let $img = $('<img>')
+        $tray.addClass('slider1')
+        let $p = $('<p>')
         $p.text(entry.gsx$description.$t)
         $img.attr('src', entry.gsx$img.$t)
-        $div.append($img)
-        $div.append($p)
+        $tray.append($img, $p)
+        $div.append($tray)
     });
+    
 })
+
 
 $.ajax({ url: 'https://spreadsheets.google.com/feeds/list/1VxZmlh7dJvvnNSIJQEof1Lxx4aZHQHk8Iq3ngcc9VFg/2/public/full?alt=json' }).then(data => {
     console.log(data.feed.entry)

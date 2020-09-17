@@ -1,74 +1,111 @@
+/* GLOBAL */
 * {
-    /* text-align: center; */
-    border-style: solid;
+    text-align: center;
+    /* border-style: solid; */
     border-width: 1px;
 }
-
+/* ENTIRE PAGE SELECTORS */
 body {
     background-color: rgb(132, 221, 221);
 }
 
+P {
+    font-size: 12px;
+}
+/* HEADER AND TITLE BAR */
 header {
     display: flex;
-    position: relative;
-    padding-left: 10px;
-    top: 10;
+    justify-content: space-around;
+    align-items: center;
     background-color: burlywood;
-    margin: 0px;
-    justify-content: space-between;
-    min-width: 270px;
 }
-
-.footer {
-    width: 100%;
-    color: white;
-    padding-left: 10px;
-    text-align: left;
-    background-color: black;
-    position: absolute;
-    bottom: 1;
-    left: 0;
-}
-
-#header {
+#header-full-page {
     display: block;
-    top: 0;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
-
+.title{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 p.hook-quote {
     display: none;
-    margin: auto;
+    margin: -10px auto auto auto;
 }
+
+/* LINK MENU DECORATION/HAMBURGER */
+
 .link {
-    color: black;
-    background-color: white;
+    display: none;
+    padding: 2px;
+    background-color: gray;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
 }
-.hamburger {
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.link.first {
+    border-style: solid;
+    border-top-width: 1px;
+}
+
+.hamburger a{
     margin: auto;
     text-align: right;
-    color: black;
+    color: black !important;
+    text-decoration: none;
     font-size: xx-large;
     display: block;
 }
-
 .nav-tray {
     display: block;
-    margin: auto;
-    margin-right: 10px;
+    /* background-color: crimson; */
+    margin-top: 5%;
+    padding-bottom: 5px;
+    
 }
 
+/* ABOUT ME SECTION */
 .about-me {
     border-radius: 10px;
     text-align: center;
     background-color: burlywood;
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
+    padding: 10px;
 }
 
 .about-me img {
-    border-radius: 100px;
+    border-radius: 125px;
+    height: 130px;
+    width: 130px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
 }
 
+.about-me h1 {
+    margin-top: 5px;
+}
+
+div.info {
+    background-color: white;
+    margin: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1%;
+}
+
+/* CAROUSEL */
 .carousel-container {
     border-radius: 10px;
     max-width: 80%;
@@ -102,8 +139,12 @@ p.hook-quote {
     
 }
 
+/* CONTACT ME */
 .contact-me {
+    max-width: 80%;
+    margin: auto;
     background-color: burlywood;
+    text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -112,6 +153,19 @@ p.hook-quote {
 .submission {
     width: 70%;
 }
+/* FOOTER */
+.footer {
+    width: 100%;
+    color: white;
+    padding-left: 10px;
+    text-align: left;
+    background-color: black;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+}
+
+/* RESPONSIVE/MEDIA */
 @media (min-width: 426px) {
     p.hook-quote {
         display: block;
@@ -119,29 +173,47 @@ p.hook-quote {
     header {
         display: block;
     }
+    .title {
+        padding-top: 2%;
+        margin-bottom: -5%;
+    }
     .nav-tray {
         display: flex;
+        background-color: crimson;
         padding-top: 10px;
-        justify-content: space-evenly;
+        justify-content: center;
     }
-    .hamburger {
-        display: none;
+    .hamburger a{
+        display: none;  
     }
-    .link{
-        display: block;
+    .link, .link.first{
+        display: block !important;
+        background-color: transparent;
+        margin: auto;
+        border-style: none;
     }
     .about-me {
         display: flex;
-        justify-content: space-evenly;
-        max-width: 700px;
+        max-width: 70%;
+        align-items: center;
+        justify-content: space-between;
     }
     .carousel-container {
-        max-width: 80%;
+        max-width: 70%;
+    }
+    .contact-me {
+        max-width: 60%;
     }
 }
 
 @media (min-width: 769px) {
     .carousel-container {
-        max-width: 780px;
+        max-width: 60%;
+    }
+    .about-me {
+        max-width: 50%;
+    }
+    .contact-me {
+        max-width: 50%;
     }
 }
