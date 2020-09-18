@@ -9,7 +9,7 @@
     font-family: 'Sedgwick Ave Display', cursive;
 }
 */
-.nothing {
+.covered {
     font-family: 'Covered By Your Grace';
     font-size: 22px;
 }
@@ -18,8 +18,9 @@
 * {
     text-align: center;
     /* border-style: solid; */
-    border-width: 1px;
+    /* border-width: 1px; */
 }
+
 /* ENTIRE PAGE SELECTORS */
 body {
     background: black;
@@ -27,18 +28,15 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
 h1 {
     font-family:'Sedgwick Ave Display';
     font-size: 30px;
 }
-
 P {
     font-family:'Assistant';
     font-weight: bold;
     font-size: 16px;
 }
-
 .panel {
     background-color:rgba(110, 110, 110, 0.2);
     backdrop-filter: blur(5px);
@@ -66,34 +64,28 @@ header {
 }
 p.hook-quote {
     display: none;
-    margin: -10px auto auto auto;
+    margin: -10px auto 10px auto;
 }
 
 /* LINK MENU DECORATION/HAMBURGER */
 .link {
     display: none;
     padding: 2px;
-    background-color: gray;
-    border-style: solid;
+    background-color:rgba(122, 122, 122, 0.2);
     border-width: 0px 1px 1px 1px;
+    border: 3px outset rgb(41, 41, 41);
 }
 
 .link a {
-    /* font-family: 'Sedgwick Ave Display'; */
-    font-size: 25px !important;
-    font-weight: lighter;
+    display: block;
+    font-family: monospace;
+    font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .link a:hover {
-    background-color:rgb(215, 175, 112);
     text-decoration: underline;
-}
-
-.link.first {
-    border-style: solid;
-    border-top-width: 1px;
 }
 
 .hamburger a{
@@ -109,11 +101,11 @@ p.hook-quote {
     margin-top: 5%;
     padding-bottom: 5px;
 }
+
 /* ABOUT ME SECTION */
 .about-me {
     border-radius: 10px;
     text-align: center;
-    /* background-color: burlywood; */
     width: 70%;
     margin: 20px auto;
     padding: 10px;
@@ -273,6 +265,7 @@ footer p {
     align-items: flex-end;
     padding: 10px;
 }
+
 /* RESPONSIVE/MEDIA */
 @media (min-width: 426px) {
     p.hook-quote {
@@ -303,24 +296,26 @@ footer p {
     .hamburger a {
         display: none;  
     }
-    .link, .link.first{
+    .link {
         display: block !important;
-
         background-color: transparent;
         margin: auto;
         border-style: none;
     }
+    .link:hover {
+        width: 15%;
+        background-color: rgb(233, 132, 144);
+    }
     .link a {
         font-family: 'Sedgwick Ave Display';
+        font-size: 25px;
+        color: black;
     }
     .about-me {
         display: flex;
         max-width: 70%;
         align-items: center;
         justify-content: space-between;
-    }
-    .carousel-container {
-        max-width: ;
     }
     .carousel-container p {
         max-width: 250px;
