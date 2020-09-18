@@ -22,49 +22,63 @@
     <!-- INNER ELEMENTS OF HEADER -->
         <header> 
         <div class="title">
-                <h1>Title/Heading</h1>
-                <p class="hook-quote">"hook quote" -Anonymous</p>
+                <h1>Blak_Canvas Design</h1>
+                <p class="hook-quote"><span class="nothing">"The artist sees what others only catch a glimpse of."</span> -Leonardo da Vinci</p>
         </div>
             
         <nav class="nav-tray">
-            <div class="hamburger"><a href= "#">☰</ahref></div> 
-                <div class="link first"><a href="#">Digital Work</a></div>
-                <div class="link"><a href="#">Fine Art</a></div>
-                <div class="link"><a href="#">Merchandise</a></div>
-                <div class="link"><a href="#">Contact Me</a></div>
+            <div class="hamburger">
+                <a href= "#">☰</a>
+                </div> 
+                <div class="link first"><a href="#digital">Digital Work</a></div>
+                <div class="link"><a href="#fine-arts">Fine Arts</a></div>
+                <div class="link"><a href="#merch">Merchandise</a></div>
+                <div class="link"><a href="#contact-me">Contact Me</a></div>
         </nav>
         </header>
         
     </div>
     <!-- ABOUT ME PAGE -->
-    <div class="about-me">
+    <div class="about-me panel">
             <!-- PROFILE PIC -->
             <img src="https://i.imgur.com/m9QvFr0.jpg" alt="profile-picture">
         <!-- DESCRIPTION/ABOUT ME PANEL -->
         <div class="info">
             <h1>About Me</h1>
-            <p>A Graphic Designer and Web Developer with other numerous talents that involve fine arts in painting, ink, and pencil.</p>
+            <p>Graphic Designer, Web Developer, and a long history of experience in the Fine Arts.<br>
+            I take tremendous pride in tackling concepts with out-of-the-box thinking and always look forward to using artistic eye to create beautiful pieces and design projects.<br>
+
+        </p>
         </div>
     </div>
     <!-- CAROUSEL CONTAINERS -->
-    <div class="carousel-container carousel-1">
-            <h1>Digital Work</h1>
+    <div class="carousel-container carousel-1 panel">
+        <h1 id="digital">Digital Work</h1>
+        <div class="controls"><button id="back1">↞</button><button id="forward1">↠</button></div>
     </div>
-    <div class="carousel-container carousel-2">
-            <h1>Fine Art</h1>
+    <div class="carousel-container carousel-2 panel">
+            <h1 id="fine-arts">Fine Arts</h1>
+            <div class="controls"><button id="back2">↞</button><button id="forward2">↠</button></div>
     </div>
-    <div class="carousel-container carousel-3">
-            <h1>Merchandise</h1>
+    <div class="carousel-container carousel-3 panel">
+            <h1 id="merch">Merchandise</h1>
+            <div class="controls"><button id="back3">↞</button><button id="forward3">↠</button></div>
     </div>
         <!-- CONTACT ME PAGE -->
-    <div class="contact-me">
-        <h1>Contact Me</h1>
-        <button class= "submission" type="submit">insert info here</button>
+    <div class="contact-me panel">
+        <h1 id="contact-me">Contact Me</h1>
+        <label for="fname">First Name</label>
+        <input class="box-space" type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input class="box-space" type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Comments</label>
+        <textarea class="box-space" id="subject" name="subject" placeholder="Enter your response here..."></textarea>
+        <input type="submit">
     </div>
 
     <!-- FOOTER PAGE SECTION -->
-    <footer class="footer">
-         <p>info about the footer down here</p>
+    <footer>
+         <div class="footer-container"><p>©Blak_Canvas Ltd. 2020</p></div>
     </footer>
     
 </body>
