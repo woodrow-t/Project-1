@@ -65,8 +65,9 @@
             <div class="controls"><button id="back3">↞</button><button id="forward3">↠</button></div>
     </div>
         <!-- CONTACT ME PAGE -->
-    <div class="contact-me panel">
+    <form class="contact-me panel" action="contactform.php" method="post">
         <h1 id="contact-me">Contact Me</h1>
+        
         <label for="fname">First Name</label>
         <input class="box-space" type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -74,7 +75,7 @@
         <label for="subject">Comments</label>
         <textarea class="box-space" id="subject" name="subject" placeholder="Enter your response here..."></textarea>
         <input type="submit">
-    </div>
+    </form>
 
     <!-- FOOTER PAGE SECTION -->
     <footer>
