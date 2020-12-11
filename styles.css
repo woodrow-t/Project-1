@@ -121,8 +121,8 @@ p.hook-quote {
 }
 
 .about-me h1 {
-    color: blue;
     margin-top: 5px;
+    padding-top: 5px;
 }
 
 div.info {
@@ -132,6 +132,33 @@ div.info {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 1%;
+}
+
+/* SKILLS */
+div.skills {
+    margin: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    
+    padding: 15px;
+    padding-top: 2px;
+}
+.skills.panel .panel {
+    background-color: rgb(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+.icon-section {
+    margin: 9px;
+}
+.icon-section p {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+}
+.skills .icon {
+    width: 50px;
 }
 
 /* CAROUSEL */
@@ -193,10 +220,9 @@ div.info {
 .contact-me {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: fit-content;
     margin: auto;
     padding: 0px 15px 15px 15px;
-    text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -205,42 +231,9 @@ div.info {
     text-decoration: underline;
     text-decoration-color:rgb(239, 35, 60);
 }
-.box-space {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-::placeholder{
-    color: black;
-}
-label {
-    display: block;
-    text-align: left;
-    color: rgb(215, 175, 112);
-    margin-top: 5px;  
-}
-input[type=text] {
-    max-width: 80%;
-    text-align: left;
-    border-radius: 3px;
-    border: 2px ridge rgb(215, 175, 112)
-}
-textarea {
-    height: 100px;
-    max-width: 100%;
-    text-align: justify;
-    border-radius: 3px;
-    border-style: ridge;
-    border-width: 2px;
-    border-color:rgb(215, 175, 112)
-}
-input[type=submit] {
-    margin-top: 5px;
-    padding: 5px;
-    width: 60px;
-    border-radius: 3px;
-}
-input[type=submit]:hover {
-    text-decoration: underline;
-    font-weight: bold;
+.contact-me .panel {
+    background-color: rgb(255, 255, 255, .3);
+    border-radius: 5px;
 }
 
 /* FOOTER */
@@ -314,7 +307,7 @@ footer p {
     }
     .about-me {
         display: flex;
-        max-width: 70%;
+        /* max-width: 70%; */
         align-items: center;
         justify-content: space-between;
     }
@@ -325,25 +318,16 @@ footer p {
     max-width: 100%;
     max-height: 300px;
     }
-    .contact-me {
-        max-width: 60%;
-    }
 }
 
 @media (min-width: 769px) {
     .carousel-container img {
         max-height: 400px;
     }
-    .about-me {
-        max-width: 50%;
-    }
-    .contact-me {
-        max-width: 50%;
-    }
 }
  @media (min-width: 1024px) {
     .about-me {
-        max-width: 500px;
+        max-width: 600px;
     }
 }
 
