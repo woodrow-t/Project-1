@@ -220,7 +220,7 @@ div.skills {
 .contact-me {
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
+    max-width: 500px;
     margin: auto;
     padding: 0px 15px 15px 15px;
     border-radius: 10px;
@@ -230,10 +230,41 @@ div.skills {
 .contact-me h1 {
     text-decoration: underline;
     text-decoration-color:rgb(239, 35, 60);
+    
+}
+.email-number {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, .3);
+    margin-bottom: 10px;
+}
+.email-number h4 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 .contact-me .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: rgb(255, 255, 255, .3);
     border-radius: 5px;
+    padding-top: 10px;
+}
+.contact-me .panel .contact {
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+.contact-me .panel p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+.contact-me .panel a.icon img{
+    width: 50px;
 }
 
 /* FOOTER */
